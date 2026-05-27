@@ -1,0 +1,251 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    }
+
+    html{
+    scroll-behavior:smooth;
+}
+
+    body{
+        overflow-x:hidden;
+        background:#f4f4f4;
+        color:#333;
+    }
+
+    header{
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("Imagenes/logo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+
+    .hero{
+        max-width:900px;
+        padding:20px;
+        position:relative;
+        z-index:2;
+    }
+
+    .hero h1{
+    font-family:'Lobster', cursive;
+    font-size:55px;
+    color:white;
+    text-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+    .hero p{
+        font-size:22px;
+        margin-bottom:20px;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:15px 40px;
+        background:#0060aaff;
+        color:white;
+        text-decoration:none;
+        border-radius:50px;
+        transition:0.3s;
+        font-size: 18px;
+        font-weight:bold;
+    }
+
+    .btn:hover{
+        background:#0060aaff;
+        transform:scale(1.05);
+    }
+
+    nav{
+    background:#0060aaff;
+    padding:20px 60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight:bold;
+        font-size: 18px;
+        transition:0.3s;
+        position:relative;
+    }
+
+    nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:3px;
+    background:#ffd54f;
+    transition:0.3s;
+}
+
+    nav a:hover{
+        width: 100%;
+        color:#ffd54f;
+    }
+
+    section{
+        padding:100px 10%;
+    }
+
+    .title{
+    letter-spacing:1px;
+    font-weight: 700;
+    text-align:center;
+    font-size:55px;
+    color:#1a084a;
+    margin-bottom:50px;
+}
+
+    .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+
+    .card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+    .card:hover{
+        transform:translateY(-10px);
+    }
+
+    .card img{
+    width:100%;
+    height:300px;
+    transition:0.4s;
+    object-fit:cover;
+}
+
+    .card:hover img{
+    transform:scale(1.05);
+}
+
+    .card-content{
+    text-align:center;
+    padding:20px;
+}
+
+    .card-content h3{
+        margin-bottom:10px;
+        color:#200079;
+    }
+
+    .card-content p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+    .precio{
+    color:#ff5e00;
+    font-size:30px;
+    font-weight:bold;
+}
+
+    .Nosotros{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+    .Nosotros img{
+    max-width: 100%;
+    width:500px;
+    border-radius:20px;
+}
+
+    .texto{
+        flex:1;
+    }
+
+    form{
+        background: white;
+        max-width: 500px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    input,
+    textarea{
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button{
+        background: #0077b6;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover{
+        background: #023e8a;
+    }
+
+    footer h3{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+    footer{
+    background: #0060aaff;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+    @media(max-width:768px){
+
+    nav{
+        flex-wrap:wrap;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav a{
+        font-size:16px;
+    }
+
+}
